@@ -8,7 +8,7 @@ import torch.nn as nn
 
 
 
-So far, the loss functions implemented are: 
+So far, the loss functions available here are: 
 
 **Cross Entropy**:
 Computes the cross entropy between a prediction and a target. 
@@ -40,5 +40,5 @@ Computes the cross entropy between a prediction and a target and applies a downw
 
 **Combo Loss**:
 Combines Focal loss and Tversky Loss into a single function.
-- Pros: it handles high class imbalance.
+- Pros: it handles highly pronounced class imbalance.
 - Cons: the Tversky loss and the Focal loss values may differ in scale, leading to a case in which one dominates over the other. It has a higher computational cost than any other loss here. 
