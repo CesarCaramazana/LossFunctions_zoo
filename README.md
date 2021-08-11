@@ -1,4 +1,4 @@
-# LossFunctions_zoo
+# Loss Functions zoo
 
 In this repository I recopilated some of the most commonly used loss functions for image segmentation tasks, with a brief definition of the pros and cons of each one. The code is implemented using Pytorch, so the following libraries must be imported:
 
