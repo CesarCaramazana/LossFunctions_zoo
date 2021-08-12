@@ -30,6 +30,7 @@ Image source: https://www.pyimagesearch.com/2016/11/07/intersection-over-union-i
 It is essentially equivalent to the Dice Loss with the difference that it adds two parameters, alpha and beta, that modulate the contribution of False Negatives and False Positives. When alpha=beta=0.5, it becomes Dice Loss.
 - Pros: it can be used in a scenario where we want to balance the performance of the model in terms of FP and FN. For example, in a skin detection algorithm, the cost of a False Negative should be higher than the cost of a False Positive, since it would have a major impact in people's health to miss the detection.
 
+<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/tversky.png" width="450px">
 
 **Focal Loss**:
 Computes the cross entropy between a prediction and a target and applies a downweighting factor (gamma) for easily classified samples.
