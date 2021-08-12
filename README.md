@@ -20,6 +20,10 @@ Computes the Sørensen-Dice coefficient between a prediction (scores) and a targ
 Computes the Jaccard coefficient between a prediction and a target. The loss is defined as 1 - JC. 
 - Pros and Cons: same as Dice Loss. 
 
+<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/iou.png" width="500px">
+
+Image source: https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/
+
 
 **Tversky Loss**:
 It is essentially equivalent to the Dice Loss with the difference that it adds two parameters, alpha and beta, that modulate the contribution of False Negatives and False Positives. When alpha=beta=0.5, it becomes Dice Loss.
@@ -31,6 +35,9 @@ Computes the cross entropy between a prediction and a target and applies a downw
 - Pros: easy to compute and to optimize. It handles class imbalance.
 - Cons: the downweighting hyperparameter gamma has to be selected by trial and error. 
 
+<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/focal.png" width="500px">
+
+Image source: https://doi.org/10.1109/ICCV.2017.324
 
 **Combo Loss**:
 Combines Focal loss and Tversky Loss into a single function.
