@@ -15,12 +15,13 @@ Computes the Sørensen-Dice coefficient between a prediction (scores) and a targ
 - Pros: it handles class imbalanced. Constrained to [0,1]. Commonly used in segmentation tasks.
 - Cons: may present some numerical inestability.
 
+<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/dice.png" width="450px">
 
 **IoU Loss**:
 Computes the Jaccard coefficient between a prediction and a target. The loss is defined as 1 - JC. 
 - Pros and Cons: same as Dice Loss. 
 
-<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/iou.png" width="500px">
+<img src="https://github.com/CesarCaramazana/LossFunctions_zoo/blob/main/images/iou.png" width="320px">
 
 Image source: https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/
 
